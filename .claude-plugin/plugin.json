@@ -14,5 +14,6 @@
     "learning"
   ],
   "homepage": "https://github.com/MuathIbnHassan/lab-instructor",
-  "repository": "https://github.com/MuathIbnHassan/lab-instructor"
+  "repository": "https://github.com/MuathIbnHassan/lab-instructor",
+  "license": "MIT"
 }
