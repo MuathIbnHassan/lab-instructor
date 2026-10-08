@@ -1,0 +1,11 @@
+{
+  "name": "instructing-hands-on-labs",
+  "owner": { "name": "Muath Ibn-Hassan" },
+  "plugins": [
+    {
+      "name": "instructing-hands-on-labs",
+      "source": "./",
+      "description": "Claude as a hands-on lab instructor, plus a lesson companion screen contract."
+    }
+  ]
+}

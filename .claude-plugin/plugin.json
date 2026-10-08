@@ -1,0 +1,7 @@
+{
+  "name": "instructing-hands-on-labs",
+  "description": "Claude as a hands-on lab instructor: the learner executes, Claude explains, predicts, verifies read-only and keeps the journal; plus a contract for building an interactive lesson companion screen.",
+  "version": "0.1.0",
+  "author": { "name": "Muath Ibn-Hassan" },
+  "keywords": ["skills", "teaching", "instructor", "labs", "tutorials", "learning"]
+}
