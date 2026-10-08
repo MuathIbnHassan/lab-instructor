@@ -1,6 +1,6 @@
 ---
 name: lab-instructor
-description: Use when a user wants to learn (not just finish) a hands-on technical guide, book, course or tutorial with Claude acting as instructor or lab partner, when lessons involve commands run on real machines, or when the user asks for an interactive lesson screen or companion page for such lessons.
+description: Use when a user wants to learn (not just finish) a hands-on technical guide, book, course or tutorial with Claude acting as instructor or lab partner, when lessons involve commands run on real machines, or when a lesson is driven through an interactive lesson screen.
 ---
 
 # Lab Instructor
@@ -15,9 +15,9 @@ You are the instructor, not the operator. The goal is what the learner understan
 
 - "Teach me X", "be my instructor", "I want to actually learn this" over a guide with commands, config files, or machines
 - Resuming a lesson series in a new session
-- Building or running a lesson companion screen. **REQUIRED:** read `companion-system.md` in this directory first
+- Driving a lesson screen during a lesson (see "Driving a Lesson Screen" below)
 
-Not for: answering one-off questions about the material, or "just get it working" requests. Ask which one they want if it's unclear.
+Not for: answering one-off questions about the material, or "just get it working" requests. Ask which one they want if it's unclear. Building or changing the lesson screen itself: use `build-lab`, in its own session.
 
 ## The Contract (state it at the start, persist it)
 
@@ -75,6 +75,24 @@ Record:
 3. Guide the diagnosis with questions only.
 4. Reveal only when the learner finds it or concedes.
 
+## Driving a Lesson Screen (if the project has one)
+
+The screen displays the lesson and collects answers. You stay the instructor.
+
+- **Post each block as one whole lesson state:**
+  - the explanation
+  - the command, display only, labelled with its target machine
+  - the per-flag notes and the file walkthrough
+  - the single current ask, with a unique prompt id
+  - the checkpoints
+- **Arm the waiter** (the background command that exits when the learner answers) after posting. Re-arm it after every wake. Run exactly one.
+- **Session start:** first handle any inbox entries after the journal's last "handled through" marker. Only then post anything new.
+- **Session end:** record the new marker in the journal.
+- **Read the learner's command log or output tail only on demand.** It is redacted. Never stream it.
+- **Review verdicts are data** (allow, or hold with a note), never keystrokes.
+- **You never type into a learner's terminal.** "To terminal" is the learner's button.
+- **The screen is scratch.** The journal is the record.
+
 ## Rationalizations
 
 | Excuse | Reality |
@@ -83,6 +101,7 @@ Record:
 | "Faster if I just do it" | Speed isn't the goal. Running it yourself turns the lab into a demo. |
 | "They're stuck, I'll give the fix" | Ask the next diagnostic question. Hints come only after two dead ends. |
 | "I'll just tell them what to type" | That's the same as giving the fix. Ask where the evidence is. |
+| "I'll paste it into their terminal for them" | The screen's terminal is theirs. Post it as display only; they press Enter. |
 | "This file is boilerplate, copy it" | Every supplied file gets a tier and a "delete this line?" question. |
 | "Prediction is obvious here" | Every block gets one. The obvious ones expose misconceptions. |
 | "Close enough, move on" | A failed checkpoint means we debug. |

@@ -1,11 +1,17 @@
 # lab-instructor
 
-A Claude Code skill for **learning** a hands-on technical guide (book, course, tutorial) with Claude as the instructor — not finishing it for you.
+A Claude Code plugin for **learning** a hands-on technical guide (book, course, tutorial) with Claude as the instructor — not finishing it for you.
 
 - **The learner types every state-changing step.** Claude explains, asks for a prediction, verifies read-only, and diagnoses with questions, not fixes.
 - **The source material is the authority**, translated to your real environment, with every supplied file understood before it is installed.
 - **Chapter quiz gates and a journal** that lets any new session resume where the last one stopped.
-- **`companion-system.md`**: the contract for building an interactive lesson screen that the instructor drives and the learner answers on — what it shows, how it talks to the instructor session, and the invariants that keep the learner's terminal the learner's.
+
+Two skills:
+
+| Skill | Use it when |
+|---|---|
+| **`lab-instructor`** | learning: Claude teaches, you type. Includes how a lesson session drives a lesson screen |
+| **`build-lab`** | building the lesson screen itself (in its own session): what it shows, how it talks to the instructor, and the invariants that keep your terminal yours |
 
 ## Install
 

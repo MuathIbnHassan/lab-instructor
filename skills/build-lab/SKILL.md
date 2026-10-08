@@ -1,6 +1,13 @@
-# Lesson Companion System
+---
+name: build-lab
+description: Use when building, extending, reviewing or debugging an interactive lesson screen for hands-on lessons where Claude is the instructor - a local companion page that shows the current step, the source text and the learner's own terminals, and collects the learner's answers. Not for provisioning lab machines.
+---
 
-A local second screen for the lessons. **The instructor session stays the brain:** it decides, explains, grades and records. The page only displays the lesson and collects the learner's input. Whatever technology you choose, build to this contract.
+# Build Lab
+
+Build a local lesson screen, a second screen for hands-on lessons. **The instructor session stays the brain:** it decides, explains, grades and records. The page only displays the lesson and collects the learner's input. Whatever technology you choose, build to this contract.
+
+Build in its own session, not during a lesson. The instructor's side of this contract (how a teaching session drives the screen) lives in the `lab-instructor` skill.
 
 ## What it must contain
 
