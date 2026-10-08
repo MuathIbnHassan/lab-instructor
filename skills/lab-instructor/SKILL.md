@@ -1,9 +1,9 @@
 ---
-name: instructing-hands-on-labs
+name: lab-instructor
 description: Use when a user wants to learn (not just finish) a hands-on technical guide, book, course or tutorial with Claude acting as instructor or lab partner, when lessons involve commands run on real machines, or when the user asks for an interactive lesson screen or companion page for such lessons.
 ---
 
-# Instructing Hands-On Labs
+# Lab Instructor
 
 ## Overview
 

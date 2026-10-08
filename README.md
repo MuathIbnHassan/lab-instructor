@@ -1,4 +1,4 @@
-# instructing-hands-on-labs
+# lab-instructor
 
 A Claude Code skill for **learning** a hands-on technical guide (book, course, tutorial) with Claude as the instructor — not finishing it for you.
 
@@ -9,21 +9,15 @@ A Claude Code skill for **learning** a hands-on technical guide (book, course, t
 
 ## Install
 
-As a plugin, one command from your terminal (adds the marketplace, then installs):
+From your terminal (adds the [by-hand](https://github.com/MuathIbnHassan/by-hand) marketplace, then installs):
 
 ```bash
-claude plugin install instructing-hands-on-labs --marketplace MuathIbnHassan/instructing-hands-on-labs
+claude plugin install lab-instructor --marketplace MuathIbnHassan/by-hand
 ```
 
 Or inside a Claude Code session:
 
 ```
-/plugin marketplace add MuathIbnHassan/instructing-hands-on-labs
-/plugin install instructing-hands-on-labs@instructing-hands-on-labs
-```
-
-Or as a plain personal skill:
-
-```bash
-ln -s ~/Development/agents-skills/instructing-hands-on-labs/skills/instructing-hands-on-labs ~/.claude/skills/instructing-hands-on-labs
+/plugin marketplace add MuathIbnHassan/by-hand
+/plugin install lab-instructor@by-hand
 ```
