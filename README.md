@@ -9,10 +9,10 @@ A Claude Code skill for **learning** a hands-on technical guide (book, course, t
 
 ## Install
 
-As a plugin (after this repo is on GitHub):
+As a plugin:
 
 ```
-/plugin marketplace add <owner>/instructing-hands-on-labs
+/plugin marketplace add MuathIbnHassan/instructing-hands-on-labs
 /plugin install instructing-hands-on-labs@instructing-hands-on-labs
 ```
 
