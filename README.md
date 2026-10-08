@@ -9,7 +9,13 @@ A Claude Code skill for **learning** a hands-on technical guide (book, course, t
 
 ## Install
 
-As a plugin:
+As a plugin, one command from your terminal (adds the marketplace, then installs):
+
+```bash
+claude plugin install instructing-hands-on-labs --marketplace MuathIbnHassan/instructing-hands-on-labs
+```
+
+Or inside a Claude Code session:
 
 ```
 /plugin marketplace add MuathIbnHassan/instructing-hands-on-labs
